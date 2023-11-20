@@ -10,7 +10,7 @@ services:
     volumes:
       - pgdata:/var/lib/postgresql/data
     ports: 
-      - "54321:5432"
+      - ${POSTGRES_PORT}:${POSTGRES_PORT}
   
   # adminer:
   #   image: adminer:latest
